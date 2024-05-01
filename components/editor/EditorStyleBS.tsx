@@ -1,11 +1,6 @@
-"use client";
 
-import { Judge0Submission } from "@/constants/judge.types";
-import { useState } from "react";
-import handleCompileJudge0 from "@/lib/JudgeCodeSetUp";
-import { Editor } from "@monaco-editor/react";
 import { EditorComponent } from "./EditorView";
-import { Code } from "mongodb";
+
 
 export const EditorStyleBs = () => {
   let codeEditor = `

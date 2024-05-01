@@ -27,7 +27,7 @@ export const Canvas: React.FC = () => {
     context.clearRect(0, 0, borderWidth, borderWidth);
     renderMaze({ context, mazeArray: MazeArray, borderWidth });
 
-    console.log(direction);
+    
     const handleDirection = () => {};
     characterLogic({
       context,

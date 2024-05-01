@@ -40,8 +40,6 @@ const handleCompileJudge0 = async ({
       if (errorResponse) {
         
         const { data, status } = errorResponse;
-        console.error("Server Error:", data);
-        console.error("Status:", status);
         if (status === 429) {
           console.error("Too Many Requests:", status);
           throw { status: 429, message: "Too Many Requests" };
@@ -53,7 +51,7 @@ const handleCompileJudge0 = async ({
         throw { status: 500, message: "Network Error" };
       }
     } else {
-      console.error("Error:");
+
       throw new Error("Something went wrong");
     }
   }
@@ -81,7 +79,6 @@ const CheckStatus = async (token: string): Promise<Judge0Submission> => {
       return response.data;
     }
   } catch (error) {
-    console.error("Error:", error);
     throw new Error("Something went wrong");
   }
 };

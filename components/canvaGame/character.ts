@@ -38,16 +38,6 @@ function characterLogic({
     newX = 0;
     newY = 0;
   }
-  console.log(
-    isPermittedToMove({
-      x: newX,
-      y: newY,
-      squares: squaresRestrict,
-      roadWidth,
-      canvasHeight,
-      canvasWidth,
-    })
-  );
   if (
     isPermittedToMove({
       x: newX,
@@ -61,7 +51,6 @@ function characterLogic({
     character.x = newX;
     character.y = newY;
   }
-  console.log(newX, newY, character.x, character.y);
   context.fillStyle = "lightgreen";
   context.fillRect(character.x, character.y, roadWidth, roadWidth);
 }
@@ -141,7 +130,7 @@ const isWinning = (
       }
     }
   }
-  console.log(position)
+ 
 
   if (y  == position.y && x == position.x) {
     context.font = "50px serif";
