@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+-[English](#english)
+-[Romana](#romana)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## <a id="english">Introduction</a>
+
+In this project, I have chosen to use the following technologies:
+
+- [Next.js](https://nextjs.org/docs): A meta-framework for [React](https://react.dev/learn), which in turn is a framework for JavaScript.
+- [Tailwind CSS](https://tailwindcss.com/docs/installation): A CSS framework.
+- [TypeScript](https://www.typescriptlang.org/docs/): A programming language that serves as a superset for JavaScript, bringing static types to the JavaScript ecosystem for safety.
+- [Judge0 API](https://ce.judge0.com): This is an API that I used to create an online editor for C++, using it to compile code on an external server, with its daily limits.
+- [Monaco Editor](https://www.npmjs.com/package/@monaco-editor/react): This library helped me in creating browser-based editor functionalities with ease.
+
+### NOTE
+All libraries and technologies were used in a specific environment. If you want to run the project offline, you will need:
+
+- NPM/Yarn etc.
+- [Node.js](https://nodejs.org/en).
 
 ## Getting Started
 
-First, run the development server:
+1. Create a ```.env.local``` file with the following variables (they should have the same names):
+
+```
+NEXT_PUBLIC_RAPID_API_KEY=
+NEXT_PUBLIC_RAPID_API_HOST=
+NEXT_PUBLIC_RAPID_API_URL=
+```
+
+2. Fill in each variable with the specific keys. These can be obtained from the official [RapidAPI](https://rapidapi.com/judge0-official/api/judge0-ce) website. Sign up for an account and enroll in the appropriate tier.
+
+3. In the terminal, use the command to start the application:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## <a id="romana">Introducere</a>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+În acest proiect, am optat să folosesc următoarele tehnologii:
 
-## Learn More
+- [Next.js](https://nextjs.org/docs): Un meta-framework pentru [React](https://react.dev/learn), care, la rândul său, este un framework pentru JavaScript.
+- [Tailwind CSS](https://tailwindcss.com/docs/installation): Un framework CSS.
+- [TypeScript](https://www.typescriptlang.org/docs/): Un limbaj de programare care servește ca un superset pentru JavaScript, aducând tipurile statice în ecosistemul JavaScript pentru siguranță.
+- [Judge0 API](https://ce.judge0.com): Acesta este un API pe care l-am folosit pentru a crea un editor online pentru C++, utilizându-l pentru a compila codul pe un server extern, cu limitele sale zilnice.
+- [Monaco Editor](https://www.npmjs.com/package/@monaco-editor/react): Această bibliotecă a avut rolul de a mă ajuta în crearea funcționalităților unui editor în browser cu ușurință.
 
-To learn more about Next.js, take a look at the following resources:
+### NOTĂ
+Toate bibliotecile și tehnologiile au fost utilizate într-un mediu specific. Dacă doriți să rulați proiectul offline, veți avea nevoie de:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- NPM/Yarn etc.
+- [Node.js](https://nodejs.org/en).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Cum să începi
 
-## Deploy on Vercel
+1. Creează un fișier ```.env.local``` cu următoarele variabile (trebuie să aibă aceleași nume):
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+NEXT_PUBLIC_RAPID_API_KEY=
+NEXT_PUBLIC_RAPID_API_HOST=
+NEXT_PUBLIC_RAPID_API_URL=
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. Completează fiecare variabilă cu cheile specifice. Acestea pot fi obținute de pe site-ul oficial [RapidAPI](https://rapidapi.com/judge0-official/api/judge0-ce). Înregistrați-vă pentru un cont și înscrieți-vă pentru tier-ul potrivit.
+
+3. În terminal, folosește comanda pentru a porni aplicația:
+
+```bash
+npm run dev (cu npm)
+```
+```bash
+yarn dev
+
+```
