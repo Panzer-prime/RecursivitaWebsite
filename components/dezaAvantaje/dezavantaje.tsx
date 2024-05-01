@@ -1,5 +1,9 @@
 import React from "react";
 import { Cards } from "@/components/cards";
+import overflow from "@/public/overflow.jpg"
+import performance from "@/public/performance.jpg"
+import code from "@/public/code.jpg"
+
 
 export const Dezavantaje = () => {
   return (
@@ -7,16 +11,19 @@ export const Dezavantaje = () => {
       <p className="text-header">Dezavantajele recursivitati</p>
       <div className="grid grid-cols-3 gap-12">
         <Cards
-          title=" Simplicitate"
-          description="Metodele recursive duc adesea la cod mai simplu și mai concis, care reflectă îndeaproape structura problemei."
+          title="Depășirea Stivei"
+          description="Recursivitatea poate duce la erori de depășire a stivei dacă adâncimea recursiei depășește limita stivei sistemului, în special pentru probleme cu recursie profundă sau dimensiuni mari ale intrării."
+          imageURL={overflow}
         />
         <Cards
-          title="Eficiență"
-          description="Pentru probleme cu o structură intrinsecă recursivă, utilizarea recursivității poate fi mai naturală și mai eficientă decât alte abordări."
+          title="Performance Issues"
+          description="Metodele recursive pot avea suprasarcină de performanță din cauza costurilor de apelare a funcțiilor și gestionării stivei de apeluri. Soluțiile iterative pot fi mai eficiente în unele cazuri."
+          imageURL={performance}
         />
         <Cards
-          title="Flexibilitate și adaptabilitate"
-          description=" Recursivitatea permite abordarea problemelor cu un grad variabil de complexitate, fiind adaptabilă la diferite scenarii și cerințe."
+          title="Dificultăți în Debugging"
+          description="Codul recursiv poate fi mai greu de depanat decât cel iterativ, în special când se lucrează cu structuri de recursivitate complexe sau cazuri de bază subtile. Urmarirea fluxului de execuție prin multiple apeluri recursive poate fi dificilă."
+          imageURL={code}
         />
       </div>
     </div>
