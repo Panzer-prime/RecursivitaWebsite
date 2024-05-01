@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@monaco-editor/react": "^4.6.0",
+    "@vercel/speed-insights": "^1.0.10",
     "axios": "^1.6.8",
     "next": "14.2.1",
     "react": "^18",
