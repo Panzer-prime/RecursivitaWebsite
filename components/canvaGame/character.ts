@@ -132,9 +132,10 @@ const isWinning = (
   }
  
 
-  if (y  == position.y && x == position.x) {
+  if (Math.round(y ) == Math.round(position.y) && Math.round(x) == Math.round(position.x) ) {
+    context.clearRect(0,0, canvasWidth,canvasHeight)
     context.font = "50px serif";
-    context.fillText("You won", canvasWidth / 2, canvasHeight / 2, 200);
+    context.fillText("You won", canvasWidth / 2, canvasHeight / 2, 400);
     return true;
   }
 };

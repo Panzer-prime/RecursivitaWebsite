@@ -17,7 +17,7 @@ export const Canvas: React.FC = () => {
 
     // Calculate canvas size
     let borderWidth = Math.min(window.innerWidth, window.innerHeight);
-    borderWidth = Math.max(borderWidth, 400);
+    borderWidth = Math.max(borderWidth, 300);
     let roadWidth = borderWidth / MazeArray[0].length;
 
     // Set canvas size
@@ -44,7 +44,7 @@ export const Canvas: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-row-reverse gap-x-4">
+    <div className="flex flex-col gap-x-4 lg:flex-row-reverse">
       <canvas ref={canvasRef} className="bg-red-600" />
       <div className="flex flex-col gap-3 text-white">
         <button

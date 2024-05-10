@@ -12,7 +12,7 @@ export const WhyPuzzle = () => {
 const Details = () => {
   return (
     <div className="flex flex-col w-[72.5rem] text-[20px] text-white gap-y-7 font-medium mt-14">
-      <p className="text-header">Dece un puzzle?</p>
+      <p className="text-header">De ce un puzzle?</p>
       <p className="">
         Un exemplu potrivit pentru recursivitate ar fi rezolvarea unui puzzle
         Recursivitatea în rezolvarea unui labirint implică descompunerea
