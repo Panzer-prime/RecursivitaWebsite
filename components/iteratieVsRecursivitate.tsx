@@ -14,45 +14,43 @@ export default IteratieVsRecursivitate;
 
 const Editoare = () => {
   let codeExampleRecursive = `
-#include <iostream>
+  #include <iostream>
 
-// Metodă recursivă pentru calculul sumei cifrelor
-int sumaCifrelorRecursiva(int n) {
-    if (n == 0)
-        return 0;
-    else
-        return n % 10 + sumaCifrelorRecursiva(n / 10);
-}
-
-int main() {
-    int numar = 12345;
-    
-    std::cout << "Suma cifrelor lui " << numar << " (Recursiv): " << sumaCifrelorRecursiva(numar) << std::endl;
-
-    return 0;
-}
+  // Recursive function to calculate the factorial of a number
+  int factorial(int n) {
+      if (n <= 1) {
+          return 1;
+      } else {
+          return n * factorial(n - 1);
+      }
+  }
+  
+  int main() {
+      int num = 5;
+      std::cout << "Factorial of " << num << " is: " << factorial(num) << std::endl;
+      return 0;
+  }
+  
 
   `;
   let codeExampleIterativ = `
-#include <iostream>
+  #include <iostream>
 
-// Metodă iterativă pentru calculul sumei cifrelor
-int sumaCifrelorIterativa(int n) {
-    int suma = 0;
-    while (n != 0) {
-        suma += n % 10;
-        n /= 10;
-    }
-    return suma;
-}
-
-int main() {
-    int numar = 12345;
-    
-    std::cout << "Suma cifrelor lui " << numar << " (Iterativ): " << sumaCifrelorIterativa(numar) << std::endl;
-
-    return 0;
-}
+  // Iterative function to calculate the factorial of a number
+  int factorial(int n) {
+      int result = 1;
+      for (int i = 1; i <= n; ++i) {
+          result *= i;
+      }
+      return result;
+  }
+  
+  int main() {
+      int num = 5;
+      std::cout << "Factorial of " << num << " is: " << factorial(num) << std::endl;
+      return 0;
+  }
+  
 
   `;
   return (
