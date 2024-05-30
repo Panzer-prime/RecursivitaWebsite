@@ -1,6 +1,6 @@
 import React from "react";
 import Grupare34 from "@/components/assets/grupare34";
-import Grupare37 from "@/components/assets/grupare34";
+import Grupare37 from "@/components/assets/grupare37";
 import { EditorStyleBs } from "../editor/EditorStyleBS";
 
 export const Introduction = () => {
